@@ -79,13 +79,17 @@
 
 
 
-<meta property="og:type" content="website">
+<meta name="description" content="#1. flumeflume的安装配置就不说了，网上一大堆。我还是给一个网址吧，https://www.jianshu.com/p/82c77166b5a3编写flume配置文件12cd /opt/apache-flume-1.8.0-binvim conf/flume_kafka_and_hdfs.conf 填写内容如下：1234567891011121314151617181920212223">
+<meta property="og:type" content="article">
 <meta property="og:title" content="莱昂">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/04/25/spark_wordcount/index.html">
 <meta property="og:site_name" content="莱昂">
+<meta property="og:description" content="#1. flumeflume的安装配置就不说了，网上一大堆。我还是给一个网址吧，https://www.jianshu.com/p/82c77166b5a3编写flume配置文件12cd /opt/apache-flume-1.8.0-binvim conf/flume_kafka_and_hdfs.conf 填写内容如下：1234567891011121314151617181920212223">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-04-25T12:19:56.839Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="莱昂">
+<meta name="twitter:description" content="#1. flumeflume的安装配置就不说了，网上一大堆。我还是给一个网址吧，https://www.jianshu.com/p/82c77166b5a3编写flume配置文件12cd /opt/apache-flume-1.8.0-binvim conf/flume_kafka_and_hdfs.conf 填写内容如下：1234567891011121314151617181920212223">
 
 
 
@@ -115,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/04/25/spark_wordcount/"/>
 
 
 
 
 
-  <title>莱昂</title>
+  <title> | 莱昂</title>
   
 
 
@@ -140,8 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -214,9 +217,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -246,9 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/04/25/spark_wordcount/" itemprop="url">未命名</a></h1>
+          <h1 class="post-title" itemprop="name headline"></h1>
         
 
         <div class="post-meta">
@@ -298,9 +299,7 @@
       
 
       
-        
-          
-            <p>#1. flume<br>flume的安装配置就不说了，网上一大堆。<br>我还是给一个网址吧，<a href="https://www.jianshu.com/p/82c77166b5a3" target="_blank" rel="noopener">https://www.jianshu.com/p/82c77166b5a3</a><br>编写flume配置文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /opt/apache-flume-1.8.0-bin</span><br><span class="line">vim conf/flume_kafka_and_hdfs.conf</span><br></pre></td></tr></table></figure></p>
+        <p>#1. flume<br>flume的安装配置就不说了，网上一大堆。<br>我还是给一个网址吧，<a href="https://www.jianshu.com/p/82c77166b5a3" target="_blank" rel="noopener">https://www.jianshu.com/p/82c77166b5a3</a><br>编写flume配置文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /opt/apache-flume-1.8.0-bin</span><br><span class="line">vim conf/flume_kafka_and_hdfs.conf</span><br></pre></td></tr></table></figure></p>
 <p>填写内容如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">a1.sources = r1</span><br><span class="line">a1.sinks = k1 k2</span><br><span class="line">a1.channels = c1 c2</span><br><span class="line"></span><br><span class="line">a1.sources.r1.type = exec</span><br><span class="line">a1.sources.r1.command = tail -F /home/syslogdatatest.txt</span><br><span class="line">a1.sources.r1.channels = c1 c2</span><br><span class="line"></span><br><span class="line">a1.channels.c1.type = file</span><br><span class="line">a1.channels.c1.checkpointDir = /home/flume/flumeCheckpoint</span><br><span class="line">a1.channels.c1.dataDirs = /home/flume/flumeData, /home/flume/flumeDataExt</span><br><span class="line">a1.channels.c1.capacity = 2000000</span><br><span class="line">a1.channels.c1.transactionCapacity = 100</span><br><span class="line"></span><br><span class="line">a1.channels.c2.type = memory</span><br><span class="line">a1.channels.c2.capacity = 2000000</span><br><span class="line">a1.channels.c2.transactionCapacity = 100</span><br><span class="line"></span><br><span class="line">a1.sinks.k1.type = hdfs</span><br><span class="line">a1.sinks.k1.channel = c1</span><br><span class="line">a1.sinks.k1.hdfs.useLocalTimeStamp = true</span><br><span class="line">a1.sinks.k1.hdfs.path = hdfs://cn01:9000/flume/events/%Y/%m/%d/%H/%M</span><br><span class="line">a1.sinks.k1.hdfs.filePrefix = cmcc</span><br><span class="line">a1.sinks.k1.hdfs.minBlockReplicas = 1</span><br><span class="line">a1.sinks.k1.hdfs.fileType = DataStream</span><br><span class="line">a1.sinks.k1.hdfs.rollInterval = 60</span><br><span class="line">a1.sinks.k1.hdfs.rollSize = 0</span><br><span class="line">a1.sinks.k1.hdfs.rollCount = 0</span><br><span class="line">a1.sinks.k1.hdfs.idleTimeout = 0</span><br><span class="line"></span><br><span class="line">a1.sinks.k2.type = org.apache.flume.sink.kafka.KafkaSink</span><br><span class="line">a1.sinks.k2.topic = test1</span><br><span class="line">a1.sinks.k2.brokerList = 192.168.10.101:9092,192.168.10.102:9092,192.168.10.103:9092</span><br><span class="line">a1.sinks.k2.requiresAcks = 1</span><br><span class="line">a1.sinks.k2.batchSize = 100</span><br><span class="line">a1.sinks.k2.channel = c2</span><br></pre></td></tr></table></figure></p>
 <p>之后保存退出即可</p>
 <p>#2. kafka<br>同样kafka 的安装配置也给一个地址，<a href="https://www.jianshu.com/p/3cb394ef41c0" target="_blank" rel="noopener">https://www.jianshu.com/p/3cb394ef41c0</a><br>kafka不需要额外的写什么，只是一个消息中间件，只要启动了kafka并且创建了topic(本文是test1，和flume配置文件里面的要相同)就好了。</p>
@@ -317,8 +316,6 @@
 <hr>
 <p>END</p>
 
-          
-        
       
     </div>
     
@@ -335,12 +332,12 @@
       
 
       
+      
+      
 
       
 
       
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -350,10 +347,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -361,6 +359,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -557,6 +559,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
